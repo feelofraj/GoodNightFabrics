@@ -1,7 +1,5 @@
 // JavaScript Document
 $(document).ready(function () {
-
-
     $("#popform").submit(function (event) {
 
         /* stop form from submitting normally */
@@ -20,7 +18,7 @@ $(document).ready(function () {
 
                 $('#error-msg').css('color', 'green');
                 $('#error-msg').html('Email sent successfully.');
-            location.reload();
+                location.reload();
             })
             .fail(function (jqXHR, textStatus, errorThrown) {
 
@@ -223,29 +221,21 @@ window.onclick = function (event) {
 }
 function getMobileOperatingSystem(msgContent) {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    
     var msg = "I am interested in your product. Call me";
-    var os = "sms:+919171547917?body=" + msg;
     if (msgContent) {
         msg = msgContent;
     }
-      // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    var os = "sms:+919171547917?body=" + msg;
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         os = "sms:+919171547917&body=" + msg;
-
     }
-
     location.href = os;
 }
 function sendMsg() {
-
     var name = document.getElementById('eName').value;
     var num = document.getElementById('ePhone').value;
     var msg = document.getElementById('eMessage').value;
     var msgContent = "Name :" + name + "%0aDescription :%0a" + msg + "%0aContact No :" + num;
-
     getMobileOperatingSystem(msgContent)
-
-
-
 }
