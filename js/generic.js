@@ -38,7 +38,6 @@ $(document).ready(function () {
         //alert();
         /* Send the data using post with element id name and name2*/
         var parameters = { name: $('.name').val(), phone: $('.phone').val(), email: $('.email').val(), message: $('.message').val() };
-        window.alert(url)
         $.ajax({
             url: "https://script.google.com/macros/s/AKfycbz3ktQIUMskVKXs0znYJhgVYPMmf6yAVlo5yyxV_aSPPxP-V2k/exec",
             method: "POST",
@@ -74,6 +73,7 @@ $(document).ready(function () {
             if (posting.posting.indexOf('Sucess:') >= 0) {
                 $('#error-msg').css('color', 'green');
                 $('#error-msg').html('Email sent successfully.');
+                location.reload();
             } else {
                 $('#error-msg').css('color', 'red');
                 $('#error-msg').html('Falied: Please try again later or contact us.');

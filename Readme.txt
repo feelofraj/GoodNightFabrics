@@ -13,3 +13,8 @@
         os = "sms:+919171547917?body=" + msg;
 
     };
+   <!-- Original Website key Goodnightfabrics.com -->
+                        <!-- <div class="g-recaptcha" data-sitekey="6LfqRGwUAAAAAGDkFTTjNJ8qwf2ryyaIRTJHUv_F"></div> -->
+                        <!-- AWS website s3-bucket Key -->
+                        <!-- <div class="g-recaptcha" data-sitekey="6LfxwIIUAAAAANQZl60OVDkHYK1aUihOymSkAkhb"></div> -->                     
+                      
