@@ -20,6 +20,7 @@ $(document).ready(function () {
 
                 $('#error-msg').css('color', 'green');
                 $('#error-msg').html('Email sent successfully.');
+            location.reload();
             })
             .fail(function (jqXHR, textStatus, errorThrown) {
 
@@ -49,6 +50,7 @@ $(document).ready(function () {
 
                 $('#contact-error-msg').css('color', 'green');
                 $('#contact-error-msg').html('Email sent successfully.');
+                location.reload();
             })
             .fail(function (jqXHR, textStatus, errorThrown) {
 
