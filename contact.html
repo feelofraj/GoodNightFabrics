@@ -41,7 +41,7 @@
                 <em></em>
                 <em></em>
             </div>
-            <div class="nav" id="bar">
+            <div class="nav" id="bar" ontouchstart="">
                 <ul>
                     <li><a href="index.html">home</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -166,9 +166,6 @@
                         <textarea name="message" id="message" placeholder="Message of Request" class="message" required></textarea>
                     </div>
                     <div class="cen">
-                        <!-- Website GoodnightFabrics -->
-                        <div class="g-recaptcha" data-sitekey="6LePP4QUAAAAANwLzozl5DGNJ61vtRHqzrM9oH2W"></div>
-                        <br>
                         <p id="contact-error-msg"></p>
                         <input type="submit" value="BOOK NOW">
                     </div>
@@ -238,10 +235,9 @@
         }
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="js/generic.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124580757-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }

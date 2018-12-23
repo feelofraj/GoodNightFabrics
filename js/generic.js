@@ -10,7 +10,7 @@ $(document).ready(function () {
             url = $form.attr('action');
         var parameters = { name: $('#name').val(), phone: $('#phone').val(), message: $('#message').val() };
         $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbz3ktQIUMskVKXs0znYJhgVYPMmf6yAVlo5yyxV_aSPPxP-V2k/exec",
+            url: "https://script.google.com/macros/s/AKfycbxrcGdPjBezMh3x69vM1vx70SoLfs81lHYeG2hla2o-kF854_c/exec",
             method: "POST",
             data: parameters
         })
@@ -39,7 +39,7 @@ $(document).ready(function () {
         /* Send the data using post with element id name and name2*/
         var parameters = { name: $('.name').val(), phone: $('.phone').val(), email: $('.email').val(), message: $('.message').val() };
         $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbz3ktQIUMskVKXs0znYJhgVYPMmf6yAVlo5yyxV_aSPPxP-V2k/exec",
+            url: "https://script.google.com/macros/s/AKfycbxrcGdPjBezMh3x69vM1vx70SoLfs81lHYeG2hla2o-kF854_c/exec",
             method: "POST",
             data: parameters
         })
