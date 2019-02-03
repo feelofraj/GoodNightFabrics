@@ -8,9 +8,9 @@ $(document).ready(function () {
         /* get the action attribute from the <form action=""> element */
         var $form = $(this),
             url = $form.attr('action');
-        var parameters = { name: $('#name').val(), phone: $('#phone').val(), message: $('#message').val() };
+            var parameters = { name: $('#name').val(), phone: $('#phone').val(), message: $('#message').val(), mailSubject: "Request from Good Night Fabrics", toMail: "goodnightmosquito@gmail.com" };
         $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbz3ktQIUMskVKXs0znYJhgVYPMmf6yAVlo5yyxV_aSPPxP-V2k/exec",
+            url: "https://script.google.com/macros/s/AKfycbxdQUSLUHH1g9V3qlYqzd3ZPCBXjIIkD_QOqAsNOEsyLNWRADXI/exec",
             method: "POST",
             data: parameters
         })
@@ -37,9 +37,9 @@ $(document).ready(function () {
             url = $form.attr('action');
         //alert();
         /* Send the data using post with element id name and name2*/
-        var parameters = { name: $('.name').val(), phone: $('.phone').val(), email: $('.email').val(), message: $('.message').val() };
+        var parameters = { name: $('.name').val(), phone: $('.phone').val(), email: $('.email').val(), message: $('.message').val(), mailSubject: "Request from Good Night Fabrics", toMail: "goodnightmosquito@gmail.com" };
         $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbz3ktQIUMskVKXs0znYJhgVYPMmf6yAVlo5yyxV_aSPPxP-V2k/exec",
+            url: "https://script.google.com/macros/s/AKfycbxdQUSLUHH1g9V3qlYqzd3ZPCBXjIIkD_QOqAsNOEsyLNWRADXI/exec",
             method: "POST",
             data: parameters
         })
