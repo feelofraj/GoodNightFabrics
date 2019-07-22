@@ -1587,7 +1587,7 @@ border: 2px solid #f2f2f2;
 }
 .popup {
 	position:fixed;
-	top:65%;
+	top:50%;
 right: 0px;
 z-index: 111;
 display: grid;
@@ -1631,11 +1631,12 @@ padding: 10px 5px;
     -webkit-animation: background 1s cubic-bezier(1,0,0,1) infinite;
     border-radius: 0 3px 3px 0;
     color: #fff;
-    font: normal 18px/normal 'open_sans_semibold';
+    font:'open_sans_semibold';
+    font-size: small;
     text-transform: uppercase;
     text-orientation: upright;
     writing-mode: vertical-rl;
-    letter-spacing: 5px;
+   
 	animation: popup 5s linear 2s infinite alternate;
 	cursor:pointer;
 }
