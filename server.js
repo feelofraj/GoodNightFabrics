@@ -6,4 +6,6 @@ app.get('/',function(req,res){
     res.sendFile(__dirname+"/index.html");
    
 })
-app.listen(8080)
+var server = app.listen(8080,()=>{
+    console.log("Running port is "+server.address().port);
+})
