@@ -1673,7 +1673,7 @@ border: 2px solid #aaaaaa;
 
 
 @media screen and (max-width:1280px){
-    
+
 }
 @media screen and (max-width:1080px){
     .header ul {
@@ -1746,7 +1746,7 @@ border: 2px solid #aaaaaa;
 }
 }
 @media screen and (max-width:1023px) {
-    
+
 }
 @media screen and (max-width:979px) {
     .nav ul {
@@ -1793,7 +1793,7 @@ border: 2px solid #aaaaaa;
 .social-bar { 
     left: 0;
     right: unset;
-    top: 30%;
+    top: 25%;
 }
 }
 @media screen and (max-width:799px) {
@@ -1990,5 +1990,32 @@ height:auto;
 }
 .logo {
     width: 55%;
+}
+}
+.popupLeft {
+	position:fixed;
+	top:45%;
+    left: 2px;
+    z-index: 111;
+    display: grid;
+}
+#myBtnLeft{
+    padding: 10px 5px;
+    background-color: #f3695d;
+    animation: background 1s cubic-bezier(1,0,0,1) infinite;
+    -webkit-animation: background 1s cubic-bezier(1,0,0,1) infinite;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+    font:'open_sans_semibold';
+    font-size: small;
+    text-transform: uppercase;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+	animation: popup 5s linear 2s infinite alternate;
+	cursor:pointer;
+}
+@media screen and (min-width: 1080px) and (max-width: 2040px) {
+.popupLeft {
+    left: 4%;
 }
 }
