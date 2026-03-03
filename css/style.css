@@ -2015,7 +2015,10 @@ height:auto;
 	cursor:pointer;
 }
 @media screen and (min-width: 1080px) and (max-width: 2040px) {
-.popupLeft {
-    left: 4%;
+    .popupLeft {
+        left: 4%;
+    }
 }
+#myBtnLeft a{
+    color: #fff;
 }
